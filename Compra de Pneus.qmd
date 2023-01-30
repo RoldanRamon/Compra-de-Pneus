@@ -1,0 +1,26 @@
+---
+title: "Compra de Pneus"
+author: "Ramon Roldan"
+date: "2023-01-22"
+categories: [Data Science, Tydeverse]
+tags: [Machine Learning, Tydeverse, Times Series, IBOV, Data Science, ETL]
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+```{r}
+library(tidyverse)
+library(rvest)
+
+url <- 'https://www.pneustore.com.br/categorias/pneus-de-carro/pneus-175-65r14/produto/pneu-firestone-aro-14-f-600-175-65r14-82t-10100082'
+
+base <- read_html(url) %>%
+  html_node("table") %>%
+  html_table() %>%
+  as_tibble() 
+
+base %>% rename('variavel'='X1','resultado'='X2')
+
+```
