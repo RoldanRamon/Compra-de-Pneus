@@ -78,10 +78,6 @@ O trabalho foi desenvolvido usando um "Projeto" dentro da IDE Rstudio, e também
 
 ### Organização no Kanban
 
-Foi criado um repositorio para ajudar no armazenamento de arquivos e versionamento de todo o projeto.
-
-![Imagem do Repositório](/assets/img/compra_pneus/print_github.png)
-
 Adotamos a ferramenta Kanban para organizar as atividades do projeto no formato de metodologia ágil:
 
 ![Imagem do Kanban](/assets/img/compra_pneus/kanbam.png)
